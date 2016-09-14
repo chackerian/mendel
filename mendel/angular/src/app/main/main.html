@@ -9,7 +9,6 @@
       <a ng-show="main.context.prev_context_id" ng-click="main.getPrevContext()"><i class="material-icons">arrow_back</i> Prev</a>
 
     </div>
-
     <!-- Right Side -->
     <div ng-show="main.context.id" class="column align-right expand text-right">
 
@@ -58,8 +57,9 @@
       <div class="callout small-12 columns with-bottom-margin">
 
         <!-- Keyword -->
-        <h1 class="keyword" ng-hide="main.editingKeyword" ng-click="main.editKeyword()">
+        <h1 class="keyword keyword-slide" ng-hide="main.editingKeyword" ng-click="main.editKeyword()">
           {{ main.keyword.name }}
+
           <!-- "Edited" label -->
           <small ng-show="main.keyword.name !== main.context.keyword_given.name">(edited)</small>
         </h1>
