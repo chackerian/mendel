@@ -12,6 +12,10 @@
     </div>
     <div class="top-bar-right">
       <ul class="dropdown menu" data-dropdown-menu data-disable-hover="true" data-click-open="true">
+      <!-- TASK: Change this route depending on whether user is on main view or about view
+  Main - goes to about
+  About - goes to main
+       -->
         <li><a ui-sref="about"><i class="material-icons">info_outline</i></a></li>
         <li ng-show="navbar.user">
           <a>{{ navbar.user.username || 'User' }} </a>
