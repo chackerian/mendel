@@ -330,6 +330,8 @@
         name: vm.keyword.name
       };
 
+      console.log(vm.newKeyword.name)
+
     }
 
     // Save New Keyword
@@ -352,6 +354,10 @@
       }
     }
 
+    // function restoreKeyword () {
+
+    // }
+
     // Get Next Context
     function getNextContext () {
 
@@ -364,7 +370,6 @@
         textsel.removeClass(".keyword-slide");
         textsel.addClass(".keyword-slide");
 
-        console.log("changed")
 
         submitReviews()
         .then(function (success) {

@@ -20,6 +20,7 @@
           <i class="material-icons">delete</i>  Delete
         </a>
 
+
         <!-- "I don't know" button -->
         <a ng-if="main.idkCategory" ng-click="main.toggleSpecialCategory('idk')" class="idk special-category" ng-class="{ 'selected': main.specialCategorySelected == 'idk' }">
           <i class="material-icons">help</i>  I don't know
@@ -73,6 +74,7 @@
         <p class="subheader">
           <a ng-hide="main.editingKeyword" ng-click="main.editKeyword()">Edit keyword</a>
           <a ng-show="main.editingKeyword" ng-click="main.saveKeyword()">Save keyword</a>
+          <a ng-show="main.editingKeyword" ng-click="main.restoreKeyword()">Restore keyword</a>
         </p>
 
       </div>
