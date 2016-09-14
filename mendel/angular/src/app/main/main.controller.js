@@ -275,14 +275,14 @@
         angular.forEach(categories, function (category) {
 
           /*
-            TODO: 
+            TODO:
             Find another way to select the special categories.
 
             Currently, we're just searching for the categories
-            with the names "Delete" and "I don't know" 
+            with the names "Delete" and "I don't know"
 
-            Additionally, it'd be nice if the special categories 
-            were protected from accidental (or intentional) deletion 
+            Additionally, it'd be nice if the special categories
+            were protected from accidental (or intentional) deletion
             in the database/back end.
           */
 
@@ -360,8 +360,15 @@
       // Check if the current context is not empty
       if (vm.context.id) {
 
+        var textsel = angular.element(".keyword-slide");
+        textsel.removeClass(".keyword-slide");
+        textsel.addClass(".keyword-slide");
+
+        console.log("changed")
+
         submitReviews()
         .then(function (success) {
+
 
           // Deselect all categories
           deselectAllCategories();
