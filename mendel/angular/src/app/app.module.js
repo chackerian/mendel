@@ -15,7 +15,7 @@
       'ngStorage',
       'focus-if',
       'toastr',
-      'ui.router',
+      'ui.router'
     ]);
 
 })();
